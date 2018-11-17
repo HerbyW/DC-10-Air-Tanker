@@ -1,0 +1,88 @@
+ 
+1:
+Autothrottle left              controls/autoflight/autothrottle-engage[0]
+CWS: control-Wheel-Steering    controls/autoflight/control-wheel-steering-override
+Autothrottle right             controls/autoflight/autothrottle-engage[1]
+
+2:
+controls/autoflight/autopilot[0]/engage-mode
+controls/autoflight/autopilot[1]/engage-mode
+
+3:
+controls/autoflight/flight-director-engage
+controls/autoflight/enable-mode-annunciators
+
+4:
+controls/autoflight/speed-select      minus
+controls/autoflight/speed-select
+controls/autoflight/speed-select      number
+controls/autoflight/speed-select
+controls/autoflight/speed-select      plus
+
+5:
+controls/autoflight/speed-mode  0 IAS
+controls/autoflight/speed-mode  1 EPR
+
+6:
+controls/autoflight/heading-select   minus
+controls/autoflight/heading-select   number
+controls/autoflight/heading-select   plus
+
+7:
+controls/autoflight/bank-angle  5-25
+
+8:
+controls/autoflight/lateral-mode 0 or 1 HDG
+controls/autoflight/lateral-mode 0 or 2 INS (Route manager)
+controls/autoflight/lateral-mode 0 or 3 LOC
+
+controls/autoflight/nav-backcourse
+
+controls/autoflight/lateral-mode 0 or 4 ILS
+
+9:
+controls/autoflight/altitude-select minus
+controls/autoflight/altitude-select
+controls/autoflight/altitude-select number
+controls/autoflight/altitude-select
+controls/autoflight/altitude-select plus
+
+10:
+controls/autoflight/vertical-speed-select minus
+controls/autoflight/vertical-speed-select number
+controls/autoflight/vertical-speed-select plus
+
+11:
+controls/autoflight/vertical-mode 0 ALT
+controls/autoflight/vertical-mode 1 V/S
+controls/autoflight/vertical-mode 2 IAS
+controls/autoflight/vertical-mode 3 Mach
+controls/autoflight/vertical-mode 4 Land
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

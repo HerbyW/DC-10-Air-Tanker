@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- McDonnell Douglas DC-10 -->
+<!-- Main model, Water dropping variant -->
+
+<PropertyList>
+
+    <path>watertank.ac</path>
+    
+	 <!--Waterdropping-->
+ 
+ <model>        
+    <path>Aircraft/DC-10-Air-Tanker/Models/Effects/Waterdropping/water-bomb.xml</path>
+      <offsets>
+	<x-m> 3 </x-m>
+	<y-m> 0 </y-m>
+	<z-m> -7 </z-m>
+	<pitch-deg>-5</pitch-deg>
+      </offsets>
+    </model>
+
+
+  <!-- Waterdropping-Doors  l-r -->
+  <animation>
+    <type>rotate</type>
+    <object-name>door-l</object-name>
+    <property>sim/multiplay/generic/float[19]</property>
+    <factor> 45 </factor>
+    <axis>
+      <x1-m> 1.9763 </x1-m>
+      <y1-m> -0.1744 </y1-m>
+      <z1-m> 0.49731 </z1-m>
+      <x2-m>-7.62005 </x2-m>
+      <y2-m> -0.1744 </y2-m>
+      <z2-m> 0.49731 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>door-r</object-name>
+    <property>sim/multiplay/generic/float[19]</property>
+    <factor> -45 </factor>
+    <axis>
+      <x1-m>  1.9763 </x1-m>
+      <y1-m> 0.1744 </y1-m>
+      <z1-m> 0.49731 </z1-m>
+      <x2-m> -7.62005 </x2-m>
+      <y2-m> 0.1744 </y2-m>
+      <z2-m> 0.49731 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    
+    modified by HerbyW 2018
+
+-->
+<PropertyList>
+
+        <title>DC-10-Air-Tanker Water dropping Jet Aircraft</title>
+        
+        
+        <key>
+            <name>Ctrl-b</name>
+            <desc>Cycle speedbrakes</desc>
+        </key>
+        <key>
+            <name>Q</name>
+            <desc>Steer tiller full left</desc>
+        </key>
+        <key>
+            <name>q</name>
+            <desc>Steer tiller left</desc>
+        </key>
+        <key>
+            <name>w</name>
+            <desc>Center tiller</desc>
+        </key>
+        <key>
+            <name>W</name>
+            <desc>Open tiller dialog</desc>
+        </key>
+        <key>
+            <name>e</name>
+            <desc>Steer tiller right</desc>
+        </key>
+        <key>
+            <name>E</name>
+            <desc>Steer tiller full right</desc>
+        </key>
+        <key>
+            <name>=</name>
+            <desc>Cycle automatic braking system setting</desc>
+        </key>
+        <key>
+            <name>F12</name>
+            <desc>Pop up radio settings dialog</desc>
+        </key>
+        <key>
+            <name>D</name>
+            <desc>close water tank doors</desc>
+        </key>
+        <key>
+            <name>s</name>
+            <desc>Autostart, hold 10 seconds</desc>
+        </key>
+        
+        <key>
+            <name>l (like "l"etter) </name>
+            <desc>release water over your target (water bombing)</desc>
+        </key>
+        
+        <key>
+            <name>B</name>
+            <desc>toggle ON/OFF Brake Parking</desc>
+        </key>        
+        <key>
+            <name>Delete</name>
+            <desc>Reverser on/off</desc>
+        </key>
+        <key>
+            <name>&lt;</name>
+            <desc>Change Pilot Model View</desc>
+        </key>
+	
+<text>
+WATER BOMBER DC-10 Air Tanker Version: 1.0.1 by Herbert Wagner (HerbyW) 2018
+***** Based on the wonderful work of Ryan Miller: DC-10-30 *****
+
+Press s for autostart.
+
+Filling of the water tank ( 45000 liters):
+
+Now you may simulate a water bombing
+=> At a low agl, 200-500 ft, over the target which is supposed to be bombed,
+=> release the water (command key 'l" like "l"etter)
+The water can be seen falling down.
+    
+The  aircraft is right now 45000 kg less, it will jump upper in the sky, be prepared for it.
+When empty don't forget to close the water tank doors ( key"D")
+
+Planned:
+
+There are 3 placards in the middle panel: red, blue, white with description, so you do not need the shortcuts :)
+    
+Make fire in MP-Modus:
+Activate all buttons in the Wildfire settings, to see the wildfire
+(in this model is it done at startup automatically, for multiplayer each player has to set it to see it).
+Press: Strg + Shift + click on the ground to make a fire, be aware that each fire gets bigger in time.
+
+Refulling can only be done at ground, open the menue: Refuel
+
+
+All animations in multiplayer!
+
+Have fun! HerbyW 2018
+</text>
+
+</PropertyList>
