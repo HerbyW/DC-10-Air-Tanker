@@ -14,11 +14,11 @@
             <cockpit type="int">3</cockpit>
             <model type="int">4</model>
         </rating>
-	<!-- <startup>
+<startup>
             <splash-texture>Aircraft/DC-10-Air-Tanker/Splash/splash1.png</splash-texture>
             <splash-texture>Aircraft/DC-10-Air-Tanker/Splash/splash2.png</splash-texture>
             <splash-texture>Aircraft/DC-10-Air-Tanker/Splash/splash3.png</splash-texture>
-        </startup> -->
+        </startup>
         <previews>
 			<preview>
 				<type>exterior</type>

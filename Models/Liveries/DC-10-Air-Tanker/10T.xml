@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PropertyList>
+  <sim>
+    <model>
+      <livery>
+	<name>10 Tanker Air Carrier</name>
+	<texture>Liveries/DC-10-Air-Tanker/10T.png</texture>
+	<registration>N450AX</registration>
+      </livery>
+    </model>
+  </sim>
+</PropertyList>
