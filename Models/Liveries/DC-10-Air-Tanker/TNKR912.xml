@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+	<sim>
+		<model>
+			<livery>
+				<name>10 TANKER AIR CARRIER</name>
+				<texture>Liveries/DC-10-Air-Tanker/TNKR912.png</texture>
+				<registration>N522AX</registration>
+				<has-center-gear type="bool">true</has-center-gear>
+			</livery>
+		</model>
+	</sim>
+
+</PropertyList>
+ 
