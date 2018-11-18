@@ -202,10 +202,6 @@
 			</livery>
 		</model>
 
-		<weight n="1">
-			<name>Passengers/Baggage</name>
-		</weight>
-
 		<menubar>
 			<default>
 				<menu n="100">

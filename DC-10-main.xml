@@ -137,23 +137,24 @@
 	    <setting>1.00</setting>	<!-- 100% -->
 	</spoilers>
 
-	<weight n="0">
-	    <name>Crew</name>
-	    <weight-lb>250</weight-lb>
-	    <max-lb>600</max-lb>
-	    <min-lb>120</min-lb>
-	</weight>
-	<weight n="1">
-	    <weight-lb>100000</weight-lb>
-	    <max-lb>142700</max-lb>
-	    <min-lb>0</min-lb>
-	</weight>
+    <weight n="0">
+        <name>Crew</name>
+        <weight-lb>250</weight-lb>
+        <max-lb>600</max-lb>
+        <min-lb>120</min-lb>
+    </weight>
+    <weight n="1">
+        <name>Passengers/Baggage</name>
+        <weight-lb>5000</weight-lb>
+        <max-lb>142700</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
     <weight n="2">
-	<name>Water</name>
-	<weight-lb type="double">100.0</weight-lb>
-	<max-lb type="double">99208.0</max-lb>
-	<min-lb type="double">0.0</min-lb>
-      </weight>
+        <name>Water/Retardant</name>
+        <weight-lb type="double">110000.0</weight-lb>
+        <max-lb type="double">110000.0</max-lb>
+        <min-lb type="double">0.0</min-lb>
+    </weight>
 
 	<menubar>
 	    <default>

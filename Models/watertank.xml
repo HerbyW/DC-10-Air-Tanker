@@ -12,10 +12,30 @@
  <model>        
     <path>Aircraft/DC-10-Air-Tanker/Models/Effects/Waterdropping/water-bomb.xml</path>
       <offsets>
-	<x-m> 3 </x-m>
+	<x-m> -7.47 </x-m>
 	<y-m> 0 </y-m>
-	<z-m> -7 </z-m>
-	<pitch-deg>-5</pitch-deg>
+	<z-m> 1 </z-m>
+	<pitch-deg>90</pitch-deg>
+      </offsets>
+    </model>
+    
+    <model>        
+    <path>Aircraft/DC-10-Air-Tanker/Models/Effects/Waterdropping/water-bomb.xml</path>
+      <offsets>
+	<x-m> -3.32 </x-m>
+	<y-m> 0 </y-m>
+	<z-m> 1 </z-m>
+	<pitch-deg>90</pitch-deg>
+      </offsets>
+    </model>
+    
+    <model>        
+    <path>Aircraft/DC-10-Air-Tanker/Models/Effects/Waterdropping/water-bomb.xml</path>
+      <offsets>
+	<x-m> 0.83 </x-m>
+	<y-m> 0 </y-m>
+	<z-m> 1 </z-m>
+	<pitch-deg>90</pitch-deg>
       </offsets>
     </model>
 

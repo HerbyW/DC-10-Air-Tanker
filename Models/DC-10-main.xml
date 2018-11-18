@@ -111,6 +111,31 @@
 			<heading-deg>-1</heading-deg>
 		</offsets>
 	</model>
+    
+    <model>
+    <path>Aircraft/DC-10-Air-Tanker/Models/Effects/enginefire.xml</path>
+    <offsets>
+      <x-m> -2.461 </x-m>
+      <y-m> 8.138 </y-m>
+      <z-m> 2.536 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/DC-10-Air-Tanker/Models/Effects/enginefire.xml</path>
+    <offsets>
+      <x-m> -2.461 </x-m>
+      <y-m>-8.138 </y-m>
+      <z-m> 2.536 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/DC-10-Air-Tanker/Models/Effects/enginefire.xml</path>
+    <offsets>
+      <x-m> 24.871 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 9.293 </z-m>
+    </offsets>
+  </model>
 
 	<model>
 		<name>Pushback</name>

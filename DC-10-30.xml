@@ -13,7 +13,7 @@
     http://www.airliners.net/aircraft-data/stats.main?id=279
 -->
 
-<airplane mass="266191">
+<airplane mass="210191">
     <!-- Approach configuration based on stall chart http://tinypic.com/hsqd1l.jpg (from airliners.net thread http://www.airliners.net/aviation-forums/tech_ops/read.main/135496/) -->
     <approach speed="132" aoa="4.0" fuel="0.2">
 	<control-setting axis="/controls/engines/engine[0]/throttle-lever" value="0.6" />
@@ -115,6 +115,7 @@
     <fuselage ax="7.142" ay="8.138" az="2.536" bx="2.461" by="8.138" bz="2.536" width="2.742" taper="0.94" midpoint="0.0" />
     <fuselage ax="7.142" ay="-8.138" az="2.536" bx="2.461" by="-8.138" bz="2.536" width="2.742" taper="0.94" midpoint="0.0" />
     <fuselage ax="-14.534" ay="0.0" az="9.654" bx="-24.871" by="0.0" bz="9.293" width="2.84" taper="0.94" midpoint="0.0" />
+    
     <!-- Actual engines -->
     <jet x="5.18" y="8.138" z="2.536" mass="12047.0" thrust="54000.0" afterburner="0" rotate="0.0" n1-idle="33.0" n1-max="120.0" n2-idle="53.0" n2-max="200.0" tsfc="0.394" egt="1050.0" epr="2.0" exhaust-speed="2555.0" spool-time="3.0">
 	<control-input axis="/controls/engines/engine[0]/throttle-lever" control="THROTTLE" />
@@ -123,6 +124,7 @@
 	<control-speed control="REVERSE_THRUST" transition-time="1.0" />
 	<actionpt x="2.461" y="8.138" z="2.536" />
     </jet>
+    
     <jet x="-18.73" y="0.0" z="9.508" mass="12047.0" thrust="54000.0" afterburner="0" rotate="0.0" n1-idle="33.0" n1-max="120.0" n2-idle="53.0" n2-max="200.0" tsfc="0.394" egt="1050.0" epr="2.0" exhaust-speed="2555.0" spool-time="3.0">
 	<control-input axis="/controls/engines/engine[1]/throttle-lever" control="THROTTLE" />
 	<control-input axis="/controls/engines/engine[1]/reverser" control="REVERSE_THRUST" />
@@ -130,6 +132,7 @@
 	<control-speed control="REVERSE_THRUST" transition-time="1.0" />
 	<actionpt x="-24.871" y="0.0" z="9.293" />
     </jet>
+    
     <jet x="5.18" y="-8.138" z="2.536" mass="12047.0" thrust="54000.0" afterburner="0" rotate="0.0" n1-idle="33.0" n1-max="120.0" n2-idle="53.0" n2-max="203.0" tsfc="0.394" egt="1050.0" epr="2.0" exhaust-speed="2555.0" spool-time="3.0">
 	<control-input axis="/controls/engines/engine[2]/throttle-lever" control="THROTTLE" />
 	<control-input axis="/controls/engines/engine[2]/reverser" control="REVERSE_THRUST" />
@@ -186,14 +189,14 @@
     <!-- Fuel and payload -->
     <!-- Fuel tank information from DC-10 type certificate http://www.caa.co.uk/default.aspx?catid=1419&pagetype=90&pageid=1925 -->
     <!-- Left wing tanks (inner, outer) -->
-    <tank x="-3.1" y="7.5" z="4.0" jet="true" capacity="16998" />
-    <tank x="-8.2" y="16.3" z="4.8" jet="true" capacity="16998" />
+    <tank x="-3.1" y="7.5" z="4.0" jet="true" capacity="10998" />
+    <tank x="-8.2" y="16.3" z="4.8" jet="true" capacity="10998" />
     <!-- Right wing tanks (inner, outer) -->
-    <tank x="-3.1" y="-7.5" z="4.0" jet="true" capacity="16998" />
-    <tank x="-8.2" y="-16.3" z="4.8" jet="true" capacity="16998" />
+    <tank x="-3.1" y="-7.5" z="4.0" jet="true" capacity="10998" />
+    <tank x="-8.2" y="-16.3" z="4.8" jet="true" capacity="10998" />
     <!-- Center tanks (main, auxilary) -->
-    <tank x="15.0" y="0.0" z="3.5" jet="true" capacity="54654" />
-    <tank x="0.0" y="0.0" z="3.5" jet="true" capacity="81944" />
+    <tank x="15.0" y="0.0" z="3.5" jet="true" capacity="14654" />
+    <tank x="0.0" y="0.0" z="3.5" jet="true" capacity="31944" />
 
     <!-- Ballast to adjust center of gravity -->
     <!-- Redistribute the mass toward the nose -->
@@ -205,8 +208,8 @@
     <!-- Crew -->
     <weight x="25.0" y="0.0" z="5.0" mass-prop="/sim/weight[0]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="600.0" />
     <!-- PAX/Cargo -->
-    <weight x="3.0" y="0.0" z="5.0" mass-prop="/sim/weight[1]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="43492.0" />
+    <weight x="3.0" y="0.0" z="5.0" mass-prop="/sim/weight[1]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="0.0" />
     <!-- Water Tanks -->
-    <weight x="-2.8219" y="0.0" z="1.286" mass-prop="/sim/weight[2]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="99208.0" />
+    <weight x="-2.8219" y="0.0" z="1.286" mass-prop="/sim/weight[2]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="110000.0" />
 
 </airplane>
