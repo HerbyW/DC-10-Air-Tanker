@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- McDonnell Douglas DC-10 -->
+<!-- Retardant Controls by HerbyW -->
+
+<PropertyList>
+
+    <path>dropswitchpanel.ac</path>
+    
+    <!-- Emergency-Switch -->
+  <animation>
+    <type>rotate</type>
+    <object-name>cover</object-name>
+    <property>/controls/retardant/emergencycover</property>
+    <interpolation> 
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>70.0</dep>
+            </entry>		
+        </interpolation>
+    <axis>
+     <x> 0</x>
+     <y> -1</y>
+     <z> 0</z>
+    </axis>
+    <center>
+    <x-m> 0.01628</x-m>
+    <y-m> 0.11959</y-m>
+    <z-m>-0.03686</z-m>
+    </center>  
+  </animation>
+
+	<animation>
+		  <type>pick</type>
+		  <object-name>cover</object-name>
+		  <action>
+		    <button>0</button>
+		    <repeatable>false</repeatable>
+		    <binding>
+		        <command>property-toggle</command>
+		        <property>/controls/retardant/emergencycover</property>
+		    </binding>
+		  </action>
+	</animation>
+    
+    <animation>
+		  <type>rotate</type>
+		  <object-name>switch-emerg</object-name>
+		  <property>/sim/fdm-initialized</property>
+      <factor>60</factor>
+		  <axis>
+		   <x>0</x>
+		   <y>1</y>
+		   <z>0</z>
+		  </axis>
+		  <center>
+		  <x-m>0.01684</x-m>
+		  <y-m>0.11927</y-m>
+		  <z-m>-0.05296</z-m>
+		  </center>  
+	</animation>
+    
+	<animation>
+		  <type>rotate</type>
+		  <object-name>switch-emerg</object-name>
+		  <property>/controls/retardant/emergencyopen</property>
+      <factor>-60</factor>
+		  <axis>
+		   <x>0</x>
+		   <y>1</y>
+		   <z>0</z>
+		  </axis>
+		  <center>
+		  <x-m>0.01684</x-m>
+		  <y-m>0.11927</y-m>
+		  <z-m>-0.05296</z-m>
+		  </center>  
+	</animation>
+
+	<animation>
+		  <type>pick</type>
+		  <object-name>switch-emerg</object-name>
+		  <object-name>sockle-emerg</object-name>
+		  <action>
+		    <button>0</button>
+		    <repeatable>false</repeatable>
+		    <binding>
+		        <command>property-toggle</command>
+		        <property>/controls/retardant/emergencyopen</property>
+		    </binding>          
+		  </action>
+	</animation>
+    
+    <!-- Retardant Release Button -->
+  <animation>
+      <type>translate</type>
+      <object-name>switch-release</object-name>
+      <property>/controls/retardant/open</property>
+      <factor>0.004</factor>
+      <axis>
+          <x> -1.0</x>
+          <y> 0.0</y>
+          <z> 0.0</z>
+      </axis>
+      <center>
+          <x-m> 0.02876</x-m>
+          <y-m> 0.11955</y-m>
+          <z-m> 0.01195</z-m>
+      </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+      <object-name>switch-release</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/retardant/open</property>
+          <value>1</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/sim/model/dc10/retardant</property>
+          <value>1</value>
+        </binding>
+    </action>
+  </animation>
+    
+</PropertyList>

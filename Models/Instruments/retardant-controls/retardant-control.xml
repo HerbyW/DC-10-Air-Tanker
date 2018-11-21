@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- McDonnell Douglas DC-10 -->
+<!-- Retardant Controls by HerbyW -->
+
+<PropertyList>
+
+	<path>retardant-controls.ac</path>
+    
+    
+    <!-- Quantity Selector 1-3 -->
+<animation>
+  <type>rotate</type>
+  <object-name>turn11</object-name>
+  <property>/controls/retardant[0]/dump-quantity</property>
+	<interpolation>
+	  <entry><ind> 0</ind><dep>   0</dep></entry>
+	  <entry><ind> 1</ind><dep> -45</dep></entry>
+	  <entry><ind> 2</ind><dep> -90</dep></entry>
+	  <entry><ind> 3</ind><dep>-135</dep></entry>
+	  <entry><ind> 4</ind><dep>-180</dep></entry>
+	</interpolation>
+  <center>
+    <x-m> 0.02867</x-m>
+    <y-m> -0.02685</y-m>
+    <z-m> 0.07394</z-m>
+  </center>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>turn11</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[0]/dump-quantity</property>
+      <step>1</step>
+      <min>0</min>
+      <max>4</max>
+      <wrap>false</wrap>
+    </binding>	
+  </action>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[0]/dump-quantity</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>4</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>  
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>turn21</object-name>
+  <property>/controls/retardant[1]/dump-quantity</property>
+	<interpolation>
+	  <entry><ind> 0</ind><dep>   0</dep></entry>
+	  <entry><ind> 1</ind><dep> -45</dep></entry>
+	  <entry><ind> 2</ind><dep> -90</dep></entry>
+	  <entry><ind> 3</ind><dep>-135</dep></entry>
+	  <entry><ind> 4</ind><dep>-180</dep></entry>
+	</interpolation>
+  <center>
+    <x-m> 0.02867</x-m>
+    <y-m> -0.02685</y-m>
+    <z-m> 0.00696</z-m>
+  </center>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>turn21</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[1]/dump-quantity</property>
+      <step>1</step>
+      <min>0</min>
+      <max>4</max>
+      <wrap>false</wrap>
+    </binding>	
+  </action>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[1]/dump-quantity</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>4</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>  
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>turn31</object-name>
+  <property>/controls/retardant[2]/dump-quantity</property>
+	<interpolation>
+	  <entry><ind> 0</ind><dep>   0</dep></entry>
+	  <entry><ind> 1</ind><dep> -45</dep></entry>
+	  <entry><ind> 2</ind><dep> -90</dep></entry>
+	  <entry><ind> 3</ind><dep>-135</dep></entry>
+	  <entry><ind> 4</ind><dep>-180</dep></entry>
+	</interpolation>
+  <center>
+    <x-m> 0.02867</x-m>
+    <y-m> -0.02685</y-m>
+    <z-m> -0.06003</z-m>
+  </center>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>turn31</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[2]/dump-quantity</property>
+      <step>1</step>
+      <min>0</min>
+      <max>4</max>
+      <wrap>false</wrap>
+    </binding>	
+  </action>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[2]/dump-quantity</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>4</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>  
+</animation>
+
+<!-- Coverage Level Selector 1-3 -->
+<animation>
+  <type>rotate</type>
+  <object-name>turn12</object-name>
+  <property>/controls/retardant[0]/dump-speed</property>
+	<interpolation>
+	  <entry><ind> 1</ind><dep>   0</dep></entry>
+	  <entry><ind> 2</ind><dep> -22.5</dep></entry>
+	  <entry><ind> 3</ind><dep> -45</dep></entry>
+	  <entry><ind> 4</ind><dep> -67.5</dep></entry>
+	  <entry><ind> 5</ind><dep>-90</dep></entry>
+      <entry><ind> 6</ind><dep>-112.5</dep></entry>
+      <entry><ind> 7</ind><dep>-135</dep></entry>
+      <entry><ind> 8</ind><dep>-180</dep></entry>
+	</interpolation>
+  <center>
+    <x-m> 0.02867</x-m>
+    <y-m> 0.01986</y-m>
+    <z-m> 0.07394</z-m>
+  </center>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>turn12</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[0]/dump-speed</property>
+      <step>1</step>
+      <min>1</min>
+      <max>8</max>
+      <wrap>false</wrap>
+    </binding>	
+  </action>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[0]/dump-speed</property>
+      <step>-1</step>
+      <min>1</min>
+      <max>8</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>  
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>turn22</object-name>
+  <property>/controls/retardant[1]/dump-speed</property>
+	<interpolation>
+	  <entry><ind> 1</ind><dep>   0</dep></entry>
+	  <entry><ind> 2</ind><dep> -22.5</dep></entry>
+	  <entry><ind> 3</ind><dep> -45</dep></entry>
+	  <entry><ind> 4</ind><dep> -67.5</dep></entry>
+	  <entry><ind> 5</ind><dep>-90</dep></entry>
+      <entry><ind> 6</ind><dep>-112.5</dep></entry>
+      <entry><ind> 7</ind><dep>-135</dep></entry>
+      <entry><ind> 8</ind><dep>-180</dep></entry>
+	</interpolation>
+  <center>
+    <x-m> 0.02867</x-m>
+    <y-m> 0.01986</y-m>
+    <z-m> 0.00696</z-m>
+  </center>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>turn22</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[1]/dump-speed</property>
+      <step>1</step>
+      <min>1</min>
+      <max>8</max>
+      <wrap>false</wrap>
+    </binding>	
+  </action>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[1]/dump-speed</property>
+      <step>-1</step>
+      <min>1</min>
+      <max>8</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>  
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>turn32</object-name>
+  <property>/controls/retardant[2]/dump-speed</property>
+	<interpolation>
+	  <entry><ind> 1</ind><dep>   0</dep></entry>
+	  <entry><ind> 2</ind><dep> -22.5</dep></entry>
+	  <entry><ind> 3</ind><dep> -45</dep></entry>
+	  <entry><ind> 4</ind><dep> -67.5</dep></entry>
+	  <entry><ind> 5</ind><dep>-90</dep></entry>
+      <entry><ind> 6</ind><dep>-112.5</dep></entry>
+      <entry><ind> 7</ind><dep>-135</dep></entry>
+      <entry><ind> 8</ind><dep>-180</dep></entry>
+	</interpolation>
+  <center>
+    <x-m> 0.02867</x-m>
+    <y-m> 0.01986</y-m>
+    <z-m> -0.06003</z-m>
+  </center>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>turn32</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[2]/dump-speed</property>
+      <step>1</step>
+      <min>1</min>
+      <max>8</max>
+      <wrap>false</wrap>
+    </binding>	
+  </action>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/retardant[2]/dump-speed</property>
+      <step>-1</step>
+      <min>1</min>
+      <max>8</max>
+      <wrap>false</wrap>
+    </binding>
+  </action>  
+</animation>
+
+<!--Lamps left right 1-3 -->
+<animation>
+  <type>select</type>
+  <object-name>_d_1-out11</object-name>
+  <condition>
+    <equals>
+    <property>/controls/retardant[0]/dump-quantity</property>
+    <value> 0 </value>
+    </equals>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_2-g11</object-name>
+  <condition>
+    <greater-than>
+    <property>/controls/retardant[0]/dump-quantity</property>
+    <value> 0 </value>
+    </greater-than>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_1-out12</object-name>
+  <condition>
+    <equals>
+    <property>/controls/retardant[0]/dump-speed</property>
+    <value> 1 </value>
+    </equals>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_2-g12</object-name>
+  <condition>
+    <greater-than>
+    <property>/controls/retardant[0]/dump-speed</property>
+    <value> 1 </value>
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>_d_1-out21</object-name>
+  <condition>
+    <equals>
+    <property>/controls/retardant[1]/dump-quantity</property>
+    <value> 0 </value>
+    </equals>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_2-g21</object-name>
+  <condition>
+    <greater-than>
+    <property>/controls/retardant[1]/dump-quantity</property>
+    <value> 0 </value>
+    </greater-than>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_1-out22</object-name>
+  <condition>
+    <equals>
+    <property>/controls/retardant[1]/dump-speed</property>
+    <value> 1 </value>
+    </equals>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_2-g22</object-name>
+  <condition>
+    <greater-than>
+    <property>/controls/retardant[1]/dump-speed</property>
+    <value> 1 </value>
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>_d_1-out31</object-name>
+  <condition>
+    <equals>
+    <property>/controls/retardant[2]/dump-quantity</property>
+    <value> 0 </value>
+    </equals>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_2-g31</object-name>
+  <condition>
+    <greater-than>
+    <property>/controls/retardant[2]/dump-quantity</property>
+    <value> 0 </value>
+    </greater-than>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_1-out32</object-name>
+  <condition>
+    <equals>
+    <property>/controls/retardant[2]/dump-speed</property>
+    <value> 1 </value>
+    </equals>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>_d_2-g32</object-name>
+  <condition>
+    <greater-than>
+    <property>/controls/retardant[2]/dump-speed</property>
+    <value> 1 </value>
+    </greater-than>
+  </condition>
+</animation>
+
+</PropertyList>

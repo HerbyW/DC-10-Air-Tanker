@@ -1,0 +1,58 @@
+     
+Menge = 3 Tanks, jeweils 4000 gal = 36667 lbs
+        <property>/consumables/retardant/tank[0]/gallons</property>
+        <property>/consumables/retardant/tank[1]/gallons</property>
+        <property>/consumables/retardant/tank[2]/gallons</property>
+        
+Dumping
+
+Dump speed = coverage level 1-8 Stufen, bei 8 in 8 Sekunden
+        <property>/controls/retardant[0]/dump-speed</property>
+        <property>/controls/retardant[1]/dump-speed</property>
+        <property>/controls/retardant[2]/dump-speed</property>
+        
+Dump Menge = 25,50,75,100%
+        <property>/controls/retardant[0]/dump-quantity</property>
+        <property>/controls/retardant[1]/dump-quantity</property>
+        <property>/controls/retardant[2]/dump-quantity</property>
+
+
+Start Dumping
+                <script>
+                    setprop("/sim/model/dc10/retardant",1);
+                </script>
+                
+Stop Dumping
+                <script>
+                    setprop("/sim/model/dc10/retardant",0);
+                </script>
+
+Emergency Drop
+                Red Cover open
+                setprop("/controls/retardant/emergencycover",1);
+                
+                Switch open
+                setprop("/controls/retardant/emergencyopen",1);
+
+                
+Fill tank
+
+                <script>
+                    setprop("/controls/retardant[0]/fill",1);
+                    setprop("/controls/retardant[1]/fill",1);
+                    setprop("/controls/retardant[2]/fill",1);
+                </script>
+                
+Tank is full
+            
+                        <property>/consumables/retardant[0]/gallons</property>
+                        <value>12000</value>
+                        
+Tank is empty
+            
+                        <property>/consumables/retardant/gallons</property>
+                        <value>1</value>
+                        
+                        
+12,000 US gallons (45,425 liters, 110,000 lbs) Gesamt in 8 Sekunden.
+The aircraft is capable of applying a line of retardant 300 ft (91 m) wide by 1 mile (1.6 km) long
