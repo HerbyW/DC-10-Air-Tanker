@@ -842,6 +842,7 @@
 			</binding>
 		</action>
 	</animation>
+
 	<animation>
 		<type>rotate</type>
 		<object-name>HdgKnob</object-name>
@@ -1210,6 +1211,21 @@
 			<z-m>0.00204</z-m>
 		</center>
 	</animation>
+    
+    <!-- new -->
+    <animation>
+		<type>pick</type>
+		<object-name>AltReset</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>setprop("/controls/autoflight/altitude-select",
+                    math.round(getprop("/position/altitude-ft"), 100));</script>
+			</binding>
+		</action>
+	</animation>    
 
 	<animation>
 		<type>pick</type>

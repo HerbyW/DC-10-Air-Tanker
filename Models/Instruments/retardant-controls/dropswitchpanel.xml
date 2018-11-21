@@ -99,7 +99,7 @@
   <animation>
       <type>translate</type>
       <object-name>switch-release</object-name>
-      <property>/controls/retardant/open</property>
+      <property>/sim/model/dc10/retardant</property>
       <factor>0.004</factor>
       <axis>
           <x> -1.0</x>
@@ -120,11 +120,6 @@
     <action>
       <button>0</button>
       <repeatable>false</repeatable>
-        <binding>
-          <command>property-assign</command>
-          <property>/controls/retardant/open</property>
-          <value>1</value>
-        </binding>
         <binding>
           <command>property-assign</command>
           <property>/sim/model/dc10/retardant</property>
