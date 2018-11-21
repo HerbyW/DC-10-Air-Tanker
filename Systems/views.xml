@@ -1,0 +1,76 @@
+<PropertyList>
+    <sim>
+        
+        <view n="0">
+            <name>Captain View</name>
+            <internal type="bool" archive="y">true</internal>
+            <config>
+                <pitch-offset-deg type="double"> -9 </pitch-offset-deg>
+                <default-field-of-view-deg type="double"> 80 </default-field-of-view-deg>
+                <x-offset-m archive="y">-0.54</x-offset-m>
+                <y-offset-m archive="y">6.06</y-offset-m>
+                <z-offset-m archive="y">-25.1</z-offset-m>
+            </config>
+        </view>
+        
+        <view n="7">
+            <name>Model View</name>
+            <internal archive="y">false</internal>
+            <config>
+                <target-y-offset-m archive="y" type="double"> 5 </target-y-offset-m>
+                <target-z-offset-m archive="y" type="double"> 10 </target-z-offset-m>
+                
+            </config>
+        </view>
+        
+        <view n="100">
+            <name>First Officer View</name>
+            <type>lookfrom</type>
+            <internal type="bool" archive="y">true</internal>
+            <config>
+                <pitch-offset-deg type="double"> -30 </pitch-offset-deg>
+                <heading-offset-deg type="double"> 25 </heading-offset-deg>
+                <default-field-of-view-deg type="double"> 95 </default-field-of-view-deg>
+                <from-model type="bool">true</from-model>
+                <x-offset-m archive="y">0.54</x-offset-m>
+                <y-offset-m archive="y">6.06</y-offset-m>
+                <z-offset-m archive="y">-25.1</z-offset-m>
+            </config>
+        </view>
+        <view n="101">
+            <name>Dropping-Camera</name>
+            <type>lookfrom</type>
+            <internal archive="y">false</internal>
+            <config>
+                <pitch-offset-deg type="double"> -25 </pitch-offset-deg>
+                <default-field-of-view-deg type="double"> 105 </default-field-of-view-deg>
+                <heading-offset-deg type="double"> 180 </heading-offset-deg>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>	
+                <x-offset-m type="double">0.00</x-offset-m> <!--Zur Seite-->
+                <y-offset-m type="double">2.04</y-offset-m> <!--Nach oben-->
+                <z-offset-m type="double">6.84</z-offset-m> <!--Nach vorne-->
+            </config>
+        </view>
+        <view n="102">
+            <name>Cabin Crew View</name>
+            <type>lookfrom</type>
+            <internal type="bool" archive="y">true</internal>
+            <config>
+                <pitch-offset-deg type="double"> -40 </pitch-offset-deg>
+                <default-field-of-view-deg type="double"> 90 </default-field-of-view-deg>
+                <from-model type="bool">true</from-model>
+                <x-offset-m archive="y">0.0</x-offset-m>
+                <y-offset-m archive="y">6.15</y-offset-m>
+                <z-offset-m archive="y">-24.8</z-offset-m>
+            </config>
+        </view>
+        
+        <chase-distance-m type="double">-100</chase-distance-m>
+        
+        <hud>
+            <visibility n="1">true</visibility>
+        </hud>
+        
+    </sim>
+</PropertyList>

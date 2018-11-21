@@ -1,4 +1,4 @@
-# DC-10 Air Tanker Version: 1.0.1, 2018 Nov 17
+# DC-10 Air Tanker Version: 1.0.2, 2018 Nov 17
 
 for FlightGear Flightsimulator by Herbert Wagner
 
@@ -31,6 +31,7 @@ Special thanks to:
 * The (many) authors of the KC-135E for making air-to-air refueling possible in FlightGear, and for the tanker boom model which was heavily adapted for the KC-10A.
 * The awesome folks at Global Virtual Air (formerly Atlas Virtual Airlines) for supporting me  during this project!
 * Many others for several amazing liveries!
+* Marc Kraus 707: switch for retardand instrument
 
 ## What's inside?
 

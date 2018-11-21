@@ -1047,6 +1047,26 @@
 		</center>
 	</animation>
 	
-
+<model>
+		<path>Aircraft/DC-10-Air-Tanker/Models/Instruments/retardant-controls/retardant-control.xml</path>
+		<offsets>
+			<x-m>-2.20</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.61</z-m>
+			<pitch-deg>270</pitch-deg>
+            <heading-deg>0.0</heading-deg>
+		</offsets>
+	</model>
+    
+    <model>
+		<path>Aircraft/DC-10-Air-Tanker/Models/Instruments/retardant-controls/dropswitchpanel.xml</path>
+		<offsets>
+			<x-m>-2.20</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.61</z-m>
+			<pitch-deg>270</pitch-deg>
+            <heading-deg>0.0</heading-deg>
+		</offsets>
+	</model>
 
 </PropertyList>

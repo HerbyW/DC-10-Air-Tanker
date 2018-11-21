@@ -40,10 +40,22 @@
     <!--	<cockpit x="16.0" y="0.75" z="-0.8" />-->
 
     <!-- Fuselage -->
-    <fuselage ax="17.74" ay="0.0" az="5.18" bx="-10.12" by="0.0" bz="5.133" width="6.0" taper="1.0" midpoint="1.0" />
-    <fuselage ax="27.67" ay="0.0" az="4.843" bx="17.74" by="0.0" bz="5.18" width="6.0" taper="0.14" midpoint="1.0" />
+    <fuselage ax="27.67" ay="0.0" az="4.843" bx="24.85" by="0.0" bz="5.1" width="4.15" taper="0.10" midpoint="1.0" />
+     <fuselage ax="24.85" ay="0.0" az="5.15" bx="17.74" by="0.0" bz="5.18" width="6.0" taper="0.70" midpoint="1.0" />
+    <fuselage ax="17.74" ay="0.0" az="5.18" bx="-10.12" by="0.0" bz="5.133" width="6.0" taper="1.0" midpoint="1.0" />    
     <fuselage ax="-10.12" ay="0.0" az="5.133" bx="-24.587" by="0.0" bz="6.101" width="6.0" taper="0.22" midpoint="0.0" />
-    <!-- water tank noch ergänzen -->
+    
+    <!-- water tank -->
+    <fuselage ax="12.90" ay="0.0" az="1.42" bx="10.90" by="0.0" bz="1.42" width="1.96" taper="0.5" midpoint="1" />
+    <fuselage ax="10.90" ay="0.0" az="1.42" bx="-4.12" by="0.0" bz="1.42" width="1.96" taper="1.0" midpoint="0.5" />
+    <fuselage ax="-4.12" ay="0.0" az="1.42" bx="-6.12" by="0.0" bz="1.42" width="1.96" taper="0.5" midpoint="0" />
+    
+    <!-- Fuselage objects for nacelles -->
+    <fuselage ax="7.142" ay="8.138" az="2.536" bx="2.461" by="8.138" bz="2.536" width="2.742" taper="0.94" midpoint="0.0" />
+    <fuselage ax="7.142" ay="-8.138" az="2.536" bx="2.461" by="-8.138" bz="2.536" width="2.742" taper="0.94" midpoint="0.0" />
+    <fuselage ax="-14.534" ay="0.0" az="9.654" bx="-24.871" by="0.0" bz="9.293" width="2.84" taper="0.94" midpoint="0.0" />
+    
+    
     
     <!-- Wings -->
     <!-- Inner segment -->
@@ -111,10 +123,7 @@
     </vstab>
 
     <!-- Engines -->
-    <!-- Fuselage objects for nacelles -->
-    <fuselage ax="7.142" ay="8.138" az="2.536" bx="2.461" by="8.138" bz="2.536" width="2.742" taper="0.94" midpoint="0.0" />
-    <fuselage ax="7.142" ay="-8.138" az="2.536" bx="2.461" by="-8.138" bz="2.536" width="2.742" taper="0.94" midpoint="0.0" />
-    <fuselage ax="-14.534" ay="0.0" az="9.654" bx="-24.871" by="0.0" bz="9.293" width="2.84" taper="0.94" midpoint="0.0" />
+    
     
     <!-- Actual engines -->
     <jet x="5.18" y="8.138" z="2.536" mass="12047.0" thrust="54000.0" afterburner="0" rotate="0.0" n1-idle="33.0" n1-max="120.0" n2-idle="53.0" n2-max="200.0" tsfc="0.394" egt="1050.0" epr="2.0" exhaust-speed="2555.0" spool-time="3.0">
@@ -189,14 +198,14 @@
     <!-- Fuel and payload -->
     <!-- Fuel tank information from DC-10 type certificate http://www.caa.co.uk/default.aspx?catid=1419&pagetype=90&pageid=1925 -->
     <!-- Left wing tanks (inner, outer) -->
-    <tank x="-3.1" y="7.5" z="4.0" jet="true" capacity="10998" />
-    <tank x="-8.2" y="16.3" z="4.8" jet="true" capacity="10998" />
+    <tank x="-3.1" y="7.5" z="4.0" jet="true" capacity="16998" />
+    <tank x="-8.2" y="16.3" z="4.8" jet="true" capacity="16998" />
     <!-- Right wing tanks (inner, outer) -->
-    <tank x="-3.1" y="-7.5" z="4.0" jet="true" capacity="10998" />
-    <tank x="-8.2" y="-16.3" z="4.8" jet="true" capacity="10998" />
+    <tank x="-3.1" y="-7.5" z="4.0" jet="true" capacity="16998" />
+    <tank x="-8.2" y="-16.3" z="4.8" jet="true" capacity="16998" />
     <!-- Center tanks (main, auxilary) -->
-    <tank x="15.0" y="0.0" z="3.5" jet="true" capacity="14654" />
-    <tank x="0.0" y="0.0" z="3.5" jet="true" capacity="31944" />
+    <tank x="15.0" y="0.0" z="3.5" jet="true" capacity="100" />
+    <tank x="0.0" y="0.0" z="3.5" jet="true" capacity="100" />
 
     <!-- Ballast to adjust center of gravity -->
     <!-- Redistribute the mass toward the nose -->

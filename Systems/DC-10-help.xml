@@ -72,6 +72,10 @@
             <name>&lt;</name>
             <desc>Change Pilot Model View</desc>
         </key>
+        <key>
+            <name>w</name>
+            <desc>Refilling Water Retardant on Ground, Brake on!</desc>
+        </key>
 	
 <text>
 WATER BOMBER DC-10 Air Tanker Version: 1.0.1 by Herbert Wagner (HerbyW) 2018

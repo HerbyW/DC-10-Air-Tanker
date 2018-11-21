@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<PropertyList>
+    
+    <default>
+        <menu n="100">
+            <label>DC-10 Air Tanker</label>
+            
+            <item>
+                <label>Autostart</label>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>sim/model/start-idling</property>
+                </binding>
+            </item>
+            <item>
+                <label>Select Livery</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        aircraft.livery.dialog.open();
+                    </script>
+                </binding>
+            </item>
+            <item>
+                <label>Pushback</label>
+                <binding>
+                    <command>dialog-show</command>
+                    <dialog-name>pushback</dialog-name>
+                </binding>
+            </item>
+            <item>
+                <label>Lights</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        DC10.dialogs.lights.open();
+                    </script>
+                </binding>
+            </item>
+            <item>
+                <label>Doors</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        DC10.dialogs.doors.open();
+                    </script>
+                </binding>
+            </item>
+            <item>
+                <label>Failures</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        DC10.dialogs.failures.open();
+                    </script>
+                </binding>
+            </item>
+            <item>
+                <label>Tiller steering</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        DC10.dialogs.tiller.open();
+                    </script>
+                </binding>
+            </item>
+        </menu>
+    </default>
+    
+</PropertyList>
+
