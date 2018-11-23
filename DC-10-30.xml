@@ -219,6 +219,6 @@
     <!-- PAX/Cargo -->
     <weight x="3.0" y="0.0" z="5.0" mass-prop="/sim/weight[1]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="0.0" />
     <!-- Water Tanks -->
-    <weight x="-2.8219" y="0.0" z="1.286" mass-prop="/sim/weight[2]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="110000.0" />
+    <weight x="2.8219" y="0.0" z="1.286" mass-prop="/sim/weight[2]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="110000.0" />
 
 </airplane>

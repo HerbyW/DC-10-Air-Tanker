@@ -19,7 +19,7 @@
     </offsets>
 
     <condition>
-      <property>controls/retardant/open</property>
+      <property>/sim/model/dc10/retardant</property>
     </condition>
 
     <attach>world</attach>

@@ -253,7 +253,6 @@
         <dump-quantity type="int">0</dump-quantity>
         <emergencycover type="bool">0</emergencycover>
         <emergencyopen type="bool">0</emergencyopen>
-        <open type="bool">0</open> 
     </retardant>
     <retardant n="1">
         <dump-speed type="int">1</dump-speed>

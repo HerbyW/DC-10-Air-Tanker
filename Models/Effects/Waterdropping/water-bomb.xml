@@ -16,7 +16,7 @@ HerbyW 2018
     <condition>
       
 	<greater-than>
-	  <property>sim/multiplay/generic/float[19]</property>
+	  <property>/sim/model/dc10/retardant</property>
 	  <value>0</value>
 	</greater-than>
 	

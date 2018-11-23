@@ -159,16 +159,22 @@
             <name>l</name>
             <desc>water bombing</desc>
             <binding>
+                <condition>
+                    <greater-than>
+                        <property>/controls/retardant[0]/DroppingAmount</property>
+                        <value type="double">0</value>
+                    </greater-than>
+                </condition>
                 <command>nasal</command>
                 <script>
                     DC10.doors.waterdoors.open();
                 </script>
             </binding>
             <binding>
-          <command>property-assign</command>
-          <property>/sim/model/dc10/retardant</property>
-          <value>1</value>
-        </binding>
+                <command>property-assign</command>
+                <property>/sim/model/dc10/retardant</property>
+                <value>1</value>
+            </binding>
         </key>
         
         <key n="119">
