@@ -12,6 +12,10 @@
 		<path>Aircraft/DC-10-Air-Tanker/Models/DC-10-30-fuselage.xml</path>
 	</model>
 
+    <sound>
+            <path>Aircraft/DC-10-Air-Tanker/Sounds/DC-10-external-sound.xml</path>
+        </sound>
+    
 	<foo include="DC-10-main.xml" omit-node="y" />
     <foo include="watertank.xml" omit-node="y" />
 

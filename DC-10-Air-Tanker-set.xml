@@ -84,7 +84,7 @@
         </instrumentation>
         
         <sound>
-            <path>Aircraft/DC-10-Air-Tanker/Sounds/DC-10-external-sound.xml</path>
+            <path>Aircraft/DC-10-Air-Tanker/Sounds/DC-10-sound.xml</path>
         </sound>
         
         <systems>
@@ -231,6 +231,7 @@
         <mach-button-pushed type="bool">false</mach-button-pushed>
         <land-button-pushed type="bool">false</land-button-pushed>
         <cws-button-pushed type="bool">false</cws-button-pushed>
+        <off type="bool">false</off>
     </autoflight>
     <engines>
         <thrust-mode type="int">0</thrust-mode>

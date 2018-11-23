@@ -194,6 +194,18 @@
 			<pitch-deg>-10</pitch-deg>
 		</offsets>
 	</model>
+    
+    <!-- Autopilot out Button -->
+    <model>
+		<path>Aircraft/DC-10-Air-Tanker/Models/Instruments/retardant-controls/AP-out-button.xml</path>
+		<offsets>
+			<x-m>-2.97</x-m>
+			<y-m>-0.384</y-m>
+			<z-m>1.153</z-m>
+			<pitch-deg>-10</pitch-deg>
+		</offsets>
+	</model>
+    
 	<model>
 		<path>Aircraft/DC-10-Air-Tanker/Models/Instruments/Stby-AI/ai.xml</path>
 		<overlay>

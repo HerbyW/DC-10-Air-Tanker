@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- McDonnell Douglas DC-10 -->
+<!-- AO-out-Button by HerbyW -->
+
+<PropertyList>
+
+    <path>AP-out-button.ac</path>
+    
+   
+    <!-- Retardant Release Button -->
+  <animation>
+      <type>translate</type>
+      <object-name>switch-release</object-name>
+      <property>/controls/autoflight/off</property>
+      <factor>0.006</factor>
+      <axis>
+          <x> -1.0</x>
+          <y> 0.0</y>
+          <z> 0.0</z>
+      </axis>
+      <center>
+          <x-m> 0.0</x-m>
+          <y-m> 0.0</y-m>
+          <z-m> 0.0</z-m>
+      </center>
+  </animation>
+
+  <animation>
+      <type>knob</type>
+      <object-name>switch-release</object-name>
+      <visible>true</visible>
+      <action>
+          <button>0</button>
+          <repeatable>false</repeatable>
+          <binding>
+              <command>property-assign</command>
+              <property>/controls/autoflight/off</property>
+              <value>1</value>              
+          </binding>
+          <binding>
+              <command>property-assign</command>
+              <property>/controls/autoflight/autothrottle-engage[0]</property>
+              <value>0</value>              
+          </binding>
+          <binding>
+              <command>property-assign</command>
+              <property>/controls/autoflight/autothrottle-engage[1]</property>
+              <value>0</value>
+          </binding>
+          <binding>
+              <command>property-assign</command>
+              <property>/controls/autoflight/autopilot[0]/engage-mode</property>
+              <value>0</value>
+          </binding>
+          <binding>
+              <command>property-assign</command>
+              <property>/controls/autoflight/autopilot[1]/engage-mode</property>
+              <value>0</value>
+          </binding>
+      </action>
+      <release>
+            <binding>
+                <command>property-assign</command>
+                <property>/controls/autoflight/off</property>
+                <value>0</value>  
+            </binding>
+        </release>
+  </animation>
+    
+</PropertyList>
