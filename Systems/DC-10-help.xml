@@ -78,34 +78,51 @@
         </key>
 	
 <text>
-WATER BOMBER DC-10 Air Tanker Version: 1.0.1 by Herbert Wagner (HerbyW) 2018
+WATER BOMBER DC-10 Air Tanker Version: 2.0.0 by Herbert Wagner (HerbyW) 2018
 ***** Based on the wonderful work of Ryan Miller: DC-10-30 *****
 
-Press s for autostart.
+Press s for autostart at least 10 seconds.
 
-Filling of the water tank ( 45000 liters):
+For functions of the autopilot see the wiki page:
+http://wiki.flightgear.org/McDonnell_Douglas_DC-10-30
 
-Now you may simulate a water bombing
-=> At a low agl, 200-500 ft, over the target which is supposed to be bombed,
-=> release the water (command key 'l" like "l"etter)
+All knobs are now updated to be used with +Shift to scroll quicker.
+
+Filling of the retardant tanks ( 45000 liters) can only be done at ground: Press "w"
+
+Simulation of retardand dropping:
+
+Set amount and coverage level:
+At the middle panel you see the controls for dumping amount,
+set it to 25-100% on all 3 tanks.
+The coverage level can be set from 1 to 8.
+Depending on this setting the amount of dropping water per second is set.
+
+100% amount at level 8 drops 45000 liter in 8 seconds.
+100% amount at level 1 drops 45000 liter in 32 seconds.
+
+=> At a low agl, 200-300 ft, over the target which is supposed to be bombed,
+=> release the water (command key 'l" like "l"etter) or use the release button at the control panel.
 The water can be seen falling down.
+On ground will be the retardant visible,
+this tiles are now unflamable and any fire will be out.
+You may bomb borders around the fire to stop it from expanding.
+Each fire will burn out in a few minutes. But they will expand rapidly.
     
-The  aircraft is right now 45000 kg less, it will jump upper in the sky, be prepared for it.
-When empty don't forget to close the water tank doors ( key"D")
+The  aircraft is right now 50000 kg less, it will jump upper in the sky, be prepared for it.
+The water tank doors ( key"D") will be closed automatically after dumping.
+You may use this function to stop dumping at any moment!
 
-Planned:
-
-There are 3 placards in the middle panel: red, blue, white with description, so you do not need the shortcuts :)
-    
-Make fire in MP-Modus:
-Activate all buttons in the Wildfire settings, to see the wildfire
-(in this model is it done at startup automatically, for multiplayer each player has to set it to see it).
+How to make fire in MP-Modus:
+Activate all buttons in the Wildfire settings, to see the wildfire.
+(In this model is it done at startup automatically, for multiplayer each player has to set it to see it).
 Press: Strg + Shift + click on the ground to make a fire, be aware that each fire gets bigger in time.
-
-Refulling can only be done at ground, open the menue: Refuel
+You can make only one fire every 4 seconds! If you make more than it will not be transmitted over the Multiplayer.
 
 
 All animations in multiplayer!
+
+Get the latest development version: https://github.com/HerbyW/DC-10-Air-Tanker
 
 Have fun! HerbyW 2018
 </text>

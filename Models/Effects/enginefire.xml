@@ -39,9 +39,16 @@
             <phi-min-deg>-1</phi-min-deg>
             <phi-max-deg>1</phi-max-deg>
             <speed-mps>
-                <property>engines/engine/n1</property>
-                <factor>1.2</factor>
-            </speed-mps>
+                <expression>
+                    <product>
+                        <property>engines/engine/n1</property>
+                        <property>sim/multiplay/generic/float[14]</property>
+                        <value>1.2</value>
+                    </product>
+                </expression>
+                <spread>18</spread>
+            </speed-mps>            
+            
             <rotation-speed>
                 <x-min-deg-sec>0</x-min-deg-sec>
                 <y-min-deg-sec>0</y-min-deg-sec>
@@ -59,9 +66,7 @@
             </particles-per-sec>
         </counter>
         
-        
-        
-       <particle>
+        <particle>
             <start>
                 <color>
                     <red><value>0.35</value></red>

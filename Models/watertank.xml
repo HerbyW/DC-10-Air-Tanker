@@ -12,7 +12,7 @@
  <model>        
     <path>Aircraft/DC-10-Air-Tanker/Models/Effects/Waterdropping/water-bomb.xml</path>
       <offsets>
-	<x-m> -7.47 </x-m>
+	<x-m> -6.05 </x-m>
 	<y-m> 0 </y-m>
 	<z-m> 1 </z-m>
 	<pitch-deg>90</pitch-deg>
@@ -22,7 +22,7 @@
     <model>        
     <path>Aircraft/DC-10-Air-Tanker/Models/Effects/Waterdropping/water-bomb.xml</path>
       <offsets>
-	<x-m> -3.32 </x-m>
+	<x-m> -1.92 </x-m>
 	<y-m> 0 </y-m>
 	<z-m> 1 </z-m>
 	<pitch-deg>90</pitch-deg>
@@ -32,7 +32,7 @@
     <model>        
     <path>Aircraft/DC-10-Air-Tanker/Models/Effects/Waterdropping/water-bomb.xml</path>
       <offsets>
-	<x-m> 0.83 </x-m>
+	<x-m> 1.97 </x-m>
 	<y-m> 0 </y-m>
 	<z-m> 1 </z-m>
 	<pitch-deg>90</pitch-deg>
@@ -44,7 +44,7 @@
   <animation>
     <type>rotate</type>
     <object-name>door-l</object-name>
-    <property>sim/multiplay/generic/float[19]</property>
+    <property>sim/multiplay/generic/int[10]</property>
     <factor> 45 </factor>
     <axis>
       <x1-m> 1.9763 </x1-m>
@@ -59,7 +59,7 @@
   <animation>
     <type>rotate</type>
     <object-name>door-r</object-name>
-    <property>sim/multiplay/generic/float[19]</property>
+    <property>sim/multiplay/generic/int[10]</property>
     <factor> -45 </factor>
     <axis>
       <x1-m>  1.9763 </x1-m>

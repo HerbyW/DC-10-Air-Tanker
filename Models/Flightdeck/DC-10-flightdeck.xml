@@ -174,6 +174,17 @@
 			<pitch-deg>-10</pitch-deg>
 		</offsets>
 	</model>
+    
+    <model>
+		<path>Aircraft/DC-10-Air-Tanker/Models/Instruments/windcompass/windcompass.xml</path>
+		<offsets>
+			<x-m>-3.064</x-m>
+			<y-m>-0.297</y-m>
+			<z-m>0.962</z-m>
+			<pitch-deg>-10</pitch-deg>
+		</offsets>
+	</model>
+    
 	<model>
 		<path>Aircraft/DC-10-Air-Tanker/Models/Instruments/Fuel/fuel.xml</path>
 		<offsets>

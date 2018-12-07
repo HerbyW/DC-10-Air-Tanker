@@ -44,19 +44,26 @@
 		</offsets>
 	</model>
 
-	<animation>
-		<name>Reverse thrust</name>
-		<type>translate</type>
-		<object-name>Reverser</object-name>
-		<object-name>ReverserRear</object-name>
-		<property alias="../../params/reverser-pos-norm" />
-		<factor>0.4</factor>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
+    <animation>
+        <name>Reverse thrust</name>
+        <type>translate</type>
+        <object-name>Reverser</object-name>
+        <object-name>ReverserRear</object-name>
+        <property>sim/multiplay/generic/float[14]</property>
+        <interpolation>
+            <entry><ind> 1.000 </ind><dep>   0 </dep></entry>
+            <entry><ind> 0.75 </ind><dep>   0.4 </dep></entry>
+            <entry><ind> -0.15 </ind><dep> 0.4 </dep></entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    
+    
 
 	<animation>
 		<name>Livery select</name>

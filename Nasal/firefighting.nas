@@ -192,26 +192,28 @@ var Wload = 1;
 
 var waterloading = maketimer( 1, func
 {
-     if(getprop("/sim/model/dc10/filling") > 0 and Wload < 111 )
-        {  
-                if(getprop("/controls/gear/brake-parking") == 1)
-          {
-                        if(getprop("/position/gear-agl-m") < 1)
-                        
-            {   if(getprop("/sim/weight[2]/weight-lb") > 109000)
+     if(getprop("/sim/model/dc10/filling") > 0 and Wload < 111 and (getprop("/controls/gear/brake-parking") == 1) and (getprop("/position/gear-agl-m") < 1))
+        
+         {                      
+         if(getprop("/sim/weight[2]/weight-lb") > 109000)
               {
                 setprop("/sim/model/dc10/filling", 0);
                 setprop("/sim/weight[2]/weight-lb", 110000);
-              }else
-			    {
+              }
+              else
+			       {
 			       var Wweight = getprop("/sim/weight[2]/weight-lb") + Wweight + 1000;
                                setprop("/sim/messages/copilot", "Water is loading ...");
 			       interpolate("/sim/weight[2]/weight-lb", Wweight, 1);
 			       Wload = Wload + 1;
-                }
-            }
+                   }
           }
-        }
+          else
+               if(getprop("/sim/model/dc10/filling") > 0)
+               {
+               setprop("/sim/model/dc10/filling", 0);
+               setprop("/sim/messages/copilot", "Refilling only on Ground possible, set your parking brake...");
+               }
 });
 
 waterloading.start();

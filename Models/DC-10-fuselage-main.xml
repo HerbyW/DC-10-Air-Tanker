@@ -27,7 +27,7 @@
 		<type>translate</type>
 		<object-name>DoorL1</object-name>
 		<object-name>DoorL1Int</object-name>
-		<property>sim/model/door-positions/pax-l1/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0.1</dep></entry>
@@ -44,7 +44,7 @@
 		<type>rotate</type>
 		<object-name>DoorL1</object-name>
 		<object-name>DoorL1Int</object-name>
-		<property>sim/model/door-positions/pax-l1/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0</dep></entry>
@@ -73,7 +73,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.pax_l2.toggle();
+					DC10.doors.pax_l1.toggle();
 				</script>
 			</binding>
 		</action>
@@ -83,7 +83,7 @@
 		<type>translate</type>
 		<object-name>DoorL2</object-name>
 		<object-name>DoorL2Int</object-name>
-		<property>sim/model/door-positions/pax-l2/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0.1</dep></entry>
@@ -100,7 +100,7 @@
 		<type>rotate</type>
 		<object-name>DoorL2</object-name>
 		<object-name>DoorL2Int</object-name>
-		<property>sim/model/door-positions/pax-l2/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0</dep></entry>
@@ -129,7 +129,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.pax_l3.toggle();
+					DC10.doors.pax_l1.toggle();
 				</script>
 			</binding>
 		</action>
@@ -139,7 +139,7 @@
 		<type>translate</type>
 		<object-name>DoorL3</object-name>
 		<object-name>DoorL3Int</object-name>
-		<property>sim/model/door-positions/pax-l3/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0.1</dep></entry>
@@ -156,7 +156,7 @@
 		<type>rotate</type>
 		<object-name>DoorL3</object-name>
 		<object-name>DoorL3Int</object-name>
-		<property>sim/model/door-positions/pax-l3/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0</dep></entry>
@@ -184,7 +184,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.pax_l4.toggle();
+					DC10.doors.pax_l1.toggle();
 				</script>
 			</binding>
 		</action>
@@ -194,7 +194,7 @@
 		<type>translate</type>
 		<object-name>DoorL4</object-name>
 		<object-name>DoorL4Int</object-name>
-		<property>sim/model/door-positions/pax-l4/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0.1</dep></entry>
@@ -211,7 +211,7 @@
 		<type>rotate</type>
 		<object-name>DoorL4</object-name>
 		<object-name>DoorL4Int</object-name>
-		<property>sim/model/door-positions/pax-l4/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0</dep></entry>
@@ -240,7 +240,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.pax_r1.toggle();
+					DC10.doors.pax_l1.toggle();
 				</script>
 			</binding>
 		</action>
@@ -250,7 +250,7 @@
 		<type>translate</type>
 		<object-name>DoorR1</object-name>
 		<object-name>DoorR1Int</object-name>
-		<property>sim/model/door-positions/pax-r1/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>-0.1</dep></entry>
@@ -267,7 +267,7 @@
 		<type>rotate</type>
 		<object-name>DoorR1</object-name>
 		<object-name>DoorR1Int</object-name>
-		<property>sim/model/door-positions/pax-r1/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0</dep></entry>
@@ -296,7 +296,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.pax_r2.toggle();
+					DC10.doors.pax_l1.toggle();
 				</script>
 			</binding>
 		</action>
@@ -306,7 +306,7 @@
 		<type>translate</type>
 		<object-name>DoorR2</object-name>
 		<object-name>DoorR2Int</object-name>
-		<property>sim/model/door-positions/pax-r2/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>-0.1</dep></entry>
@@ -323,7 +323,7 @@
 		<type>rotate</type>
 		<object-name>DoorR2</object-name>
 		<object-name>DoorR2Int</object-name>
-		<property>sim/model/door-positions/pax-r2/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0</dep></entry>
@@ -352,7 +352,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.pax_r3.toggle();
+					DC10.doors.pax_l1.toggle();
 				</script>
 			</binding>
 		</action>
@@ -362,7 +362,7 @@
 		<type>translate</type>
 		<object-name>DoorR3</object-name>
 		<object-name>DoorR3Int</object-name>
-		<property>sim/model/door-positions/pax-r3/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>-0.1</dep></entry>
@@ -379,7 +379,7 @@
 		<type>rotate</type>
 		<object-name>DoorR3</object-name>
 		<object-name>DoorR3Int</object-name>
-		<property>sim/model/door-positions/pax-r3/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0</dep></entry>
@@ -407,7 +407,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.pax_r4.toggle();
+					DC10.doors.pax_l1.toggle();
 				</script>
 			</binding>
 		</action>
@@ -417,7 +417,7 @@
 		<type>translate</type>
 		<object-name>DoorR4</object-name>
 		<object-name>DoorR4Int</object-name>
-		<property>sim/model/door-positions/pax-r4/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>-0.1</dep></entry>
@@ -434,7 +434,7 @@
 		<type>rotate</type>
 		<object-name>DoorR4</object-name>
 		<object-name>DoorR4Int</object-name>
-		<property>sim/model/door-positions/pax-r4/position-norm</property>
+		<property>sim/multiplay/generic/float[7]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.2</ind><dep>0</dep></entry>

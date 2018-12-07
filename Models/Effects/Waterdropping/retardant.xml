@@ -19,7 +19,7 @@
     </offsets>
 
     <condition>
-      <property>/sim/model/dc10/retardant</property>
+      <property>sim/multiplay/generic/int[10]</property>
     </condition>
 
     <attach>world</attach>

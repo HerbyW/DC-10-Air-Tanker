@@ -6,7 +6,19 @@
 <PropertyList>
 
     <path>dropswitchpanel.ac</path>
+ 
     
+<animation>
+		<name>Lighting</name>
+		<type>material</type>
+		<emission>
+			<red>0.5</red>
+			<green>0.5</green>
+			<blue>0.273</blue>
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+		</emission>
+	</animation>
+
     <!-- Emergency-Switch -->
   <animation>
     <type>rotate</type>

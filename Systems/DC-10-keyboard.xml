@@ -1,191 +1,185 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-
-        <!-- Speedbrake/spoiler control -->
-        <key n="2">
-            <name>Ctrl-b</name>
-            <desc>Cycle speedbrakes</desc>
-            <binding>
-                <command>property-cycle</command>
-                <property>controls/flight/spoilers</property>
-                <value alias="/sim/speedbrakes/setting[0]" />
-                <value alias="/sim/speedbrakes/setting[1]" />
-                <value alias="/sim/speedbrakes/setting[2]" />
-                <value alias="/sim/speedbrakes/setting[3]" />
-            </binding>
-        </key>
-        <!-- Tiller steering -->
-        <key n="81">
-            <name>Q</name>
-            <desc>Steer tiller full left</desc>
-            <binding>
-                <command>property-assign</command>
-                <property>controls/gear/tiller-steer-deg</property>
-                <value>-68</value>
-            </binding>
-        </key>
-        <key n="113">
-            <name>q</name>
-            <desc>Steer tiller left</desc>
-            <repeatable type="bool">true</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/gear/tiller-steer-deg</property>
-                <step>-8.5</step>
-                <min>-68</min>
-            </binding>
-        </key>
-        <key n="119">
-            <name>w</name>
-            <desc>Center tiller</desc>
-            <binding>
-                <command>property-assign</command>
-                <property>controls/gear/tiller-steer-deg</property>
-                <value>0</value>
-            </binding>
-        </key>
-        <key n="87">
-            <name>W</name>
-            <desc>Open tiller dialog</desc>
-            <binding>
-                <command>nasal</command>
-                <script>
-                    DC10.dialogs.tiller.open();
-                </script>
-            </binding>
-        </key>
-        <key n="101">
-            <name>e</name>
-            <desc>Steer tiller right</desc>
-            <repeatable type="bool">true</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/gear/tiller-steer-deg</property>
-                <step>8.5</step>
-                <max>68</max>
-            </binding>
-        </key>
-        <key n="69">
-            <name>E</name>
-            <desc>Steer tiller full right</desc>
-            <binding>
-                <command>property-assign</command>
-                <property>controls/gear/tiller-steer-deg</property>
-                <value>68</value>
-            </binding>
-        </key>
-        <!-- Automatic braking system -->
-        <key n="61">
-            <name>=</name>
-            <desc>Cycle automatic braking system setting</desc>
-            <binding>
-                <command>property-cycle</command>
-                <property>controls/gear/ABS-select</property>
-                <value>0</value> <!-- OFF -->
-                <value>1</value> <!-- MIN -->
-                <value>2</value> <!-- MED -->
-                <value>3</value> <!-- MAX -->
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                    DC10.announce_autobrake ();
-                </script>
-            </binding>
-        </key>
-        <!-- Reverse thrust -->
-        <key n="127">
-            <name>Delete</name>
-            <desc>Toggle reverse thrust</desc>
-            <binding>
-                <command>nasal</command>
-                <script>
-                    DC10.engine1.reverse_thrust();
-                    DC10.engine2.reverse_thrust();
-                    DC10.engine3.reverse_thrust();
-                </script>
-            </binding>
-        </key>
-        <!-- GUI -->
-        <key n="268">
-            <name>F12</name>
-            <desc>Pop up radio settings dialog</desc>
-            <binding>
-                <command>nasal</command>
-                <script>
-                    DC10.dialogs.radio.open();
-                </script>
-            </binding>
-        </key>
-        
-        <key n="115">
-            <name>s</name>
-            <desc>Autostart</desc>
-            <binding>
-                <command>property-toggle</command>
-                <property>sim/model/start-idling</property>
-            </binding>
-        </key>
-        
-        <key n="60">
-            <name> > </name>
-            <desc>Change Pilot Model View</desc>
-            <binding>
-                <command>property-cycle</command>
-                <property>/sim/current-view/view-number</property>  
-                <value>0</value>
-                <value>7</value>
-            </binding>
-        </key>        
-        
-        <key n="68">
-            <name>D</name>
-            <desc>Close water-door</desc>
-            <binding>
-                <command>nasal</command>
-                <script>
-                    DC10.doors.waterdoors.close();
-                </script>
-            </binding>
-            <binding>
-          <command>property-assign</command>
-          <property>/sim/model/dc10/retardant</property>
-          <value>0</value>
+    
+    <!-- Speedbrake/spoiler control -->
+    <key n="2">
+        <name>Ctrl-b</name>
+        <desc>Cycle speedbrakes</desc>
+        <binding>
+            <command>property-cycle</command>
+            <property>controls/flight/spoilers</property>
+            <value alias="/sim/speedbrakes/setting[0]" />
+            <value alias="/sim/speedbrakes/setting[1]" />
+            <value alias="/sim/speedbrakes/setting[2]" />
+            <value alias="/sim/speedbrakes/setting[3]" />
         </binding>
-        </key>
-        
-        <key n="108">
-            <name>l</name>
-            <desc>water bombing</desc>
-            <binding>
-                <condition>
-                    <greater-than>
-                        <property>/controls/retardant[0]/DroppingAmount</property>
-                        <value type="double">0</value>
-                    </greater-than>
-                </condition>
-                <command>nasal</command>
-                <script>
-                    DC10.doors.waterdoors.open();
-                </script>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>/sim/model/dc10/retardant</property>
-                <value>1</value>
-            </binding>
-        </key>
-        
-        <key n="119">
-    <name>w</name>
-    <desc>Refilling Water Retardant</desc>
-    <binding>
-      <command>property-toggle</command>
-      <property>/sim/model/dc10/filling</property>
-    </binding>
-  </key>
-        
+    </key>
+    <!-- Tiller steering -->
+    <key n="81">
+        <name>Q</name>
+        <desc>Steer tiller full left</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/gear/tiller-steer-deg</property>
+            <value>-68</value>
+        </binding>
+    </key>
+    <key n="113">
+        <name>q</name>
+        <desc>Steer tiller left</desc>
+        <repeatable type="bool">true</repeatable>
+        <binding>
+            <command>property-adjust</command>
+            <property>controls/gear/tiller-steer-deg</property>
+            <step>-8.5</step>
+            <min>-68</min>
+        </binding>
+    </key>
+    <key n="119">
+        <name>w</name>
+        <desc>Center tiller</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/gear/tiller-steer-deg</property>
+            <value>0</value>
+        </binding>
+    </key>
+    <key n="87">
+        <name>W</name>
+        <desc>Open tiller dialog</desc>
+        <binding>
+            <command>nasal</command>
+            <script>
+                DC10.dialogs.tiller.open();
+            </script>
+        </binding>
+    </key>
+    <key n="101">
+        <name>e</name>
+        <desc>Steer tiller right</desc>
+        <repeatable type="bool">true</repeatable>
+        <binding>
+            <command>property-adjust</command>
+            <property>controls/gear/tiller-steer-deg</property>
+            <step>8.5</step>
+            <max>68</max>
+        </binding>
+    </key>
+    <key n="69">
+        <name>E</name>
+        <desc>Steer tiller full right</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/gear/tiller-steer-deg</property>
+            <value>68</value>
+        </binding>
+    </key>
+    <!-- Automatic braking system -->
+    <key n="61">
+        <name>=</name>
+        <desc>Cycle automatic braking system setting</desc>
+        <binding>
+            <command>property-cycle</command>
+            <property>controls/gear/ABS-select</property>
+            <value>0</value> <!-- OFF -->
+            <value>1</value> <!-- MIN -->
+            <value>2</value> <!-- MED -->
+            <value>3</value> <!-- MAX -->
+        </binding>
+        <binding>
+            <command>nasal</command>
+            <script>
+                DC10.announce_autobrake ();
+            </script>
+        </binding>
+    </key>
+    <!-- Reverse thrust -->
+    <key n="127">
+        <name>Delete</name>
+        <desc>Toggle reverse thrust</desc>
+        <binding>
+            <command>property-toggle</command>
+            <property>/controls/reverser</property>
+        </binding>
+    </key>
+    <!-- GUI -->
+    <key n="268">
+        <name>F12</name>
+        <desc>Pop up radio settings dialog</desc>
+        <binding>
+            <command>nasal</command>
+            <script>
+                DC10.dialogs.radio.open();
+            </script>
+        </binding>
+    </key>
+    
+    <key n="115">
+        <name>s</name>
+        <desc>Autostart</desc>
+        <binding>
+            <command>property-toggle</command>
+            <property>sim/model/start-idling</property>
+        </binding>
+    </key>
+    
+    <key n="60">
+        <name> > </name>
+        <desc>Change Pilot Model View</desc>
+        <binding>
+            <command>property-cycle</command>
+            <property>/sim/current-view/view-number</property>  
+            <value>0</value>
+            <value>7</value>
+        </binding>
+    </key>        
+    
+    <key n="68">
+        <name>D</name>
+        <desc>Close water-door</desc>
+        <binding>
+            <command>nasal</command>
+            <script>
+                DC10.doors.waterdoors.close();
+            </script>
+        </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>/sim/model/dc10/retardant</property>
+            <value>0</value>
+        </binding>
+    </key>
+    
+    <key n="108">
+        <name>l</name>
+        <desc>water bombing</desc>
+        <binding>
+            <condition>
+                <greater-than>
+                    <property>/controls/retardant[0]/DroppingAmount</property>
+                    <value type="double">0</value>
+                </greater-than>
+            </condition>
+            <command>nasal</command>
+            <script>
+                DC10.doors.waterdoors.open();
+            </script>
+        </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>/sim/model/dc10/retardant</property>
+            <value>1</value>
+        </binding>
+    </key>
+    
+    <key n="119">
+        <name>w</name>
+        <desc>Refilling Water Retardant</desc>
+        <binding>
+            <command>property-toggle</command>
+            <property>/sim/model/dc10/filling</property>
+        </binding>
+    </key>
+    
 </PropertyList>
-  
-  

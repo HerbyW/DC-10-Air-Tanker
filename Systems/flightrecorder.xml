@@ -27,17 +27,8 @@
             
             <signal>
                 <type>float</type>
-                <property type="string">surface-positions/flap-inner-pos-norm</property>
+                <property type="string">surface-positions/slat-pos-norm</property>
             </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">surface-positions/flap-outer-pos-norm</property>
-            </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">surface-positions/elevator-pos-norm</property>
-            </signal>
-            
             <signal>
                 <type>float</type>
                 <property type="string">surface-positions/left-aileron-inner-pos-norm</property>
@@ -54,10 +45,7 @@
                 <type>float</type>
                 <property type="string">surface-positions/right-spoiler-outer-pos-norm</property>
             </signal>
-            <signal>
-                <type>float</type>
-                <property type="string">surface-positions/rudder-pos-norm</property>
-            </signal>
+            
             <signal>
                 <type>float</type>
                 <property type="string">surface-positions/spoiler-inner-pos-norm</property>
@@ -160,8 +148,7 @@
             </signal>
             <signal>
                 <type>int16</type><property type="string">autopilot/settings/heading-bug-deg</property>
-            </signal>
-            
+            </signal>            
             <signal>
                 <type>float</type><property type="string">gear/brake-thermal-energy</property>
             </signal>
@@ -184,15 +171,13 @@
             <signal>
                 <type>float</type>
                 <property type="string">gear/gear[4]/compression-m</property> 
-            </signal>
-            
+            </signal>            
             <signal>
                 <type>float</type><property type="string">controls/gear/nosegear-steering-cmd</property>
             </signal>
             <signal>
                 <type>float</type><property type="string">controls/gear/maingear-steering-cmd</property>
-            </signal>
-            
+            </signal>            
             <signal>
                 <type>float</type>
                 <property type="string">velocities/groundspeed-kt</property>

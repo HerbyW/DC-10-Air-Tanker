@@ -48,7 +48,7 @@
 	<type>rotate</type>
 	<object-name>Cargo1</object-name>
 	<object-name>Cargo1Int</object-name>
-	<property>sim/model/door-positions/cargo-fwd/position-norm</property>
+	<property>sim/multiplay/generic/float[16]</property>
 	<factor>158</factor>
 	<axis>
 	    <x>1</x>
@@ -73,7 +73,7 @@
 	    <binding>
 		<command>nasal</command>
 		<script>
-		    DC10.doors.cargo_aft.toggle();
+		    DC10.doors.cargo_fwd.toggle();
 		</script>
 	    </binding>
 	</action>
@@ -83,7 +83,7 @@
 	<type>rotate</type>
 	<object-name>Cargo2</object-name>
 	<object-name>Cargo2Int</object-name>
-	<property>sim/model/door-positions/cargo-aft/position-norm</property>
+	<property>sim/multiplay/generic/float[16]</property>
 	<factor>158</factor>
 	<axis>
 	    <x1-m>9.514</x1-m>

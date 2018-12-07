@@ -109,26 +109,14 @@
 	<name>Outboard aileron controller</name>
 	<input>
 	    <or>
-		<and>
 		    <greater-than>
-			<property>surface-positions/flap-outer-pos-norm</property>
+			<property>surface-positions/flap-pos-norm</property>
 			<value>0</value>
 		    </greater-than>
 		    <greater-than>
-			<property>surface-positions/flap-inner-pos-norm</property>
+			<property>surface-positions/slat-pos-norm</property>
 			<value>0</value>
 		    </greater-than>
-		</and>
-		<and>
-		    <greater-than>
-			<property>surface-positions/slat-outer-pos-norm</property>
-			<value>0</value>
-		    </greater-than>
-		    <greater-than>
-			<property>surface-positions/slat-inner-pos-norm</property>
-			<value>0</value>
-		    </greater-than>
-		</and>
 	    </or>
 	</input>
 	<output>controls/flight/outboard-ailerons</output>

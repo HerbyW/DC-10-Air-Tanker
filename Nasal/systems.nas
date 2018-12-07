@@ -353,9 +353,61 @@ var dialogs =
 	autopilot: gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/DC-10-Air-Tanker/Systems/autopilot-dlg.xml"),
 	radio: gui.Dialog.new("sim/gui/dialogs/radio-stack/dialog", "Aircraft/DC-10-Air-Tanker/Systems/radio-stack-dlg.xml"),
 	lights: gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/DC-10-Air-Tanker/Systems/lights-dlg.xml"),
-	doors: gui.Dialog.new("sim/gui/dialogs/doors/dialog", "Aircraft/DC-10-Air-Tanker/Systems/doors-dlg.xml"),
 	failures: gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/DC-10-Air-Tanker/Systems/failures-dlg.xml"),
 	tiller: gui.Dialog.new("sim/gui/dialogs/tiller/dialog", "Aircraft/DC-10-Air-Tanker/Systems/tiller-dlg.xml")
 };
 gui.menuBind("autopilot", "DC10.dialogs.autopilot.open();");
 gui.menuBind("radio", "DC10.dialogs.radio.open();");
+
+
+
+######################################
+# Additional code for flaps-slats binding together
+
+setlistener("/controls/flight/flaps", func 
+{
+     setprop("/controls/flight/slats", getprop("/controls/flight/flaps"));
+});
+
+######################################
+#
+# Reverser properties for Multiplayer and Enginesmoke: reverserminus
+#
+
+setlistener("/controls/engines/engine[0]/reverser", func
+ {
+if
+(  getprop("/controls/engines/engine[0]/reverser") == 0) 
+{
+setprop("/controls/reverser", 0);
+interpolate("/controls/engines/engine[0]/reverserminus", 1.0, 1);
+
+}
+else
+{  
+setprop("/controls/reverser", 1);
+interpolate("/controls/engines/engine[0]/reverserminus", -0.150, 1);
+}
+ }
+);
+
+
+setlistener("/controls/reverser", func
+ {
+if
+(  getprop("/controls/reverser") == 0) 
+{
+setprop("/controls/engines/engine[0]/reverser", 0);
+setprop("/controls/engines/engine[1]/reverser", 0);
+setprop("/controls/engines/engine[2]/reverser", 0);
+interpolate("/controls/engines/engine[0]/reverserminus", 1.0, 1);
+}
+else
+{  
+setprop("/controls/engines/engine[0]/reverser", 1);
+setprop("/controls/engines/engine[1]/reverser", 1);
+setprop("/controls/engines/engine[2]/reverser", 1);
+interpolate("/controls/engines/engine[0]/reverserminus", -0.150, 1);
+}
+ }
+);

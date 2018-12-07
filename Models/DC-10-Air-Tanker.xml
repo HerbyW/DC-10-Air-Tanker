@@ -4,19 +4,30 @@
 <!-- Main model, PAX version -->
 
 <PropertyList>
-
     
     
-	<model>
-		<name>Fuselage</name>
-		<path>Aircraft/DC-10-Air-Tanker/Models/DC-10-30-fuselage.xml</path>
-	</model>
-
+    
+    <model>
+        <name>Fuselage</name>
+        <path>Aircraft/DC-10-Air-Tanker/Models/DC-10-30-fuselage.xml</path>
+    </model>
+    
+    <model>
+        <name>refilling</name>
+        <path>Aircraft/DC-10-Air-Tanker/Models/Effects/Refilling/refilling.xml</path>
+        <condition>        
+            <equals>
+                <property>sim/multiplay/generic/int[11]</property>
+                <value>1</value>
+            </equals>        
+        </condition>
+    </model>
+    
     <sound>
-            <path>Aircraft/DC-10-Air-Tanker/Sounds/DC-10-external-sound.xml</path>
-        </sound>
+        <path>Aircraft/DC-10-Air-Tanker/Sounds/DC-10-sound.xml</path>
+    </sound>
     
-	<foo include="DC-10-main.xml" omit-node="y" />
+    <foo include="DC-10-main.xml" omit-node="y" />
     <foo include="watertank.xml" omit-node="y" />
-
+    
 </PropertyList>

@@ -11,7 +11,7 @@
 		<name>Left elevator</name>
 		<type>rotate</type>
 		<object-name>ElevatorL</object-name>
-		<property>controls/flight/elevator</property>
+		<property>/surface-positions/elevator-pos-norm</property>
 		<factor>20</factor>
 		<axis>
 			<x1-m>25.969</x1-m>
@@ -26,7 +26,7 @@
 		<name>Right elevator</name>
 		<type>rotate</type>
 		<object-name>ElevatorR</object-name>
-		<property>controls/flight/elevator</property>
+		<property>/surface-positions/elevator-pos-norm</property>
 		<factor>20</factor>
 		<axis>
 			<x1-m>21.62</x1-m>
@@ -43,7 +43,7 @@
 		<object-name>Hstabs</object-name>
 		<object-name>ElevatorL</object-name>
 		<object-name>ElevatorR</object-name>
-		<property>controls/flight/elevator-trim</property>
+		<property>/surface-positions/elevator-pos-norm</property>
 		<interpolation>
 			<entry><ind>-1</ind><dep>-10</dep></entry>
 			<entry><ind>1</ind><dep>10</dep></entry>

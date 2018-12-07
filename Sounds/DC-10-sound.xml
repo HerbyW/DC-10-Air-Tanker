@@ -59,8 +59,8 @@
                 </and>
             </condition>
             <volume>
-         		<property>/engines/engine/thrust-lbs</property>
-         		<factor>0.0000074451</factor>
+         		<property>/engines/engine/rpm</property>
+         		<factor>0.003511</factor>
            </volume>
            <pitch>
              <property>/engines/engine/n1</property>
@@ -151,10 +151,10 @@
                         <property>engines/engine/rpm</property>
                         <value>0</value>
                     </greater-than>
-                    <greater-than>
-                        <property>engines/engine/reverser-pos-norm</property>
-                        <value>0</value>
-                    </greater-than>
+                    <less-than>
+                        <property>sim/multiplay/generic/float[14]</property>
+                        <value>0.75</value>
+                    </less-than>
                 </and>
             </condition>
             <pitch>
@@ -217,8 +217,8 @@
                 </and>
             </condition>
             <volume>
-         		<property>/engines/engine[1]/thrust-lbs</property>
-         		<factor>0.0000074451</factor>
+         		<property>/engines/engine/rpm</property>
+         		<factor>0.003511</factor>
            </volume>
            <pitch>
               <property>/engines/engine[1]/n1</property>
@@ -311,10 +311,10 @@
                         <property>engines/engine[1]/rpm</property>
                         <value>0</value>
                     </greater-than>
-                    <greater-than>
-                        <property>engines/engine[1]/reverser-pos-norm</property>
-                        <value>0</value>
-                    </greater-than>
+                    <less-than>
+                        <property>sim/multiplay/generic/float[14]</property>
+                        <value>0.75</value>
+                    </less-than>
                 </and>
             </condition>
             <pitch>
@@ -377,8 +377,8 @@
                 </and>
             </condition>
             <volume>
-         		<property>/engines/engine[2]/thrust-lbs</property>
-         		<factor>0.0000074451</factor>
+         		<property>/engines/engine/rpm</property>
+         		<factor>0.003511</factor>
            </volume>
            <pitch>
               <property>/engines/engine[2]/n1</property>
@@ -470,10 +470,10 @@
                         <property>engines/engine[2]/rpm</property>
                         <value>0</value>
                     </greater-than>
-                    <greater-than>
-                        <property>engines/engine[2]/reverser-pos-norm</property>
-                        <value>0</value>
-                    </greater-than>
+                    <less-than>
+                        <property>sim/multiplay/generic/float[14]</property>
+                        <value>0.75</value>
+                    </less-than>
                 </and>
             </condition>
             <pitch>

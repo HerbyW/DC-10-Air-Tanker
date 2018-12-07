@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+copyright herbert wagner 2016-2018 modified for DC-10 Air Tanker
+-->
+
+<PropertyList>
+    
+    <path>windcompass.ac</path>
+    
+    <!-- Lights -->
+    
+    <!-- working for Rembrandt -->
+    
+    <animation>
+        <name>Lighting</name>
+        <type>material</type>
+        <emission>
+            <red>0.65</red>
+            <green>0.65</green>
+            <blue>0.65</blue>
+            <factor-prop>controls/lighting/instruments-norm</factor-prop>
+        </emission>
+    </animation>
+    
+    <!-- wind needle  -->
+    <animation>
+        <type>rotate</type>
+        <object-name>n2</object-name>
+        <property>environment/wind-from-heading-deg</property>
+        <factor>-1.0</factor>
+        <offset-deg> -288 </offset-deg>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.000</y-m>
+            <z-m>-0.00</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>n2</object-name>
+        <property>orientation/heading-deg</property>    
+        <condition>
+            <property>instrumentation/heading-indicator[0]/serviceable</property>
+        </condition>    
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    
+    <!-- indicated air speed -->
+    <animation>
+        <type>select</type>
+        <object-name>gsinvalid</object-name>
+        <condition>
+            <less-than>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <value>0.8</value>
+            </less-than>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>gs1</object-name>
+        <object-name>gs10</object-name>
+        <object-name>gs100</object-name>
+        <condition>
+            <equals>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <value>0.8</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>gs100</object-name>
+        <property>velocities/groundspeed-kt</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>gs10</object-name>
+        <property>velocities/groundspeed-kt</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>gs1</object-name>
+        <property>velocities/groundspeed-kt</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <!-- True air speed -->
+    <animation>
+        <type>select</type>
+        <object-name>iasinvalid</object-name>
+        <condition>
+            <less-than>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <value>0.8</value>
+            </less-than>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>ias1</object-name>
+        <object-name>ias10</object-name>
+        <object-name>ias100</object-name>
+        <condition>
+            <equals>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <value>0.8</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>ias100</object-name>
+        <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>ias10</object-name>
+        <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>ias1</object-name>
+        <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <!-- wind speed -->
+    <animation>
+        <type>select</type>
+        <object-name>winvalid</object-name>
+        <condition>
+            <less-than>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <value>0.8</value>
+            </less-than>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>w1</object-name>
+        <object-name>w10</object-name>
+        <object-name>w100</object-name>
+        <condition>
+            <equals>
+                <property>controls/lighting/instrument-lights-norm</property>
+                <value>0.8</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>w100</object-name>
+        <property>environment/wind-speed-kt</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>w10</object-name>
+        <property>environment/wind-speed-kt</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>textranslate</type>
+        <object-name>w1</object-name>
+        <property>environment/wind-speed-kt</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <bias>0.5</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>scale</type>
+        <property>sim/signals/fdm-initialized</property>
+        <offset>1</offset>
+        <x-max>1.25</x-max>
+        <y-max>1.25</y-max>
+        <z-max>1.25</z-max>
+        <x-factor>1.25</x-factor>
+        <y-factor>1.25</y-factor>
+        <z-factor>1.25</z-factor>
+    </animation>
+    
+</PropertyList>

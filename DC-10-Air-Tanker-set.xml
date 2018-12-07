@@ -11,7 +11,7 @@
         <flight-model>yasim</flight-model>
         <aero>DC-10-30AT</aero>
         <status>early production</status>
-        <aircraft-version>1.0.2</aircraft-version>
+        <aircraft-version>2.0.0</aircraft-version>
         <rating>
             <FDM type="int">3</FDM>
             <systems type="int">4</systems>
@@ -86,6 +86,23 @@
         <sound>
             <path>Aircraft/DC-10-Air-Tanker/Sounds/DC-10-sound.xml</path>
         </sound>
+        
+        
+        <multiplay>
+            <chat_display>1</chat_display>
+            <generic>
+                <int n="10" alias="/sim/model/dc10/retardant">  0 </int>
+                <int n="11" alias="/sim/model/dc10/filling">  0 </int>
+                
+                <float n="6" alias="/gear/gear[2]/rollspeed-ms" />
+                <float n="7" alias="/sim/model/door-positions/pax-l1/position-norm">  0 </float>
+                <float n="8" alias="/controls/retardant[0]/LBSpersecond">  0 </float>
+                
+                <float n="14" alias="/controls/engines/engine[0]/reverserminus">  0 </float>
+                <float n="16" alias="/sim/model/door-positions/cargo-fwd/position-norm">  0 </float>                
+            
+            </generic>
+        </multiplay>
         
         <systems>
             <!-- Disable the generic electrical system -->
@@ -235,10 +252,12 @@
     </autoflight>
     <engines>
         <thrust-mode type="int">0</thrust-mode>
+            <engine n="0">
+                <reverserminus type="float">1.0</reverserminus>
+            </engine>
     </engines>
     <flight>
         <outboard-ailerons type="bool">true</outboard-ailerons>
-        <slats alias="../flaps" /> <!-- Technically, the flaps lever can separate itself from the slats lever in the retracted position, but this is difficult to simulate on a computer, so we will just keep them coupled -->
     </flight>
     <gear>
         <brake-parking type="bool">true</brake-parking>
@@ -263,7 +282,10 @@
         <dump-speed type="int">1</dump-speed>
         <dump-quantity type="int">0</dump-quantity>
     </retardant>
-
+    <reverser type="bool">0</reverser>
+    <lighting>
+        <strobe type="bool">true</strobe>
+    </lighting>
 </controls>
 
 <scenery><share-events type="bool">true</share-events></scenery>
